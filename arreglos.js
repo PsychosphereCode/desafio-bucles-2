@@ -16,13 +16,13 @@ function siempreHambriento(arr) {
         }   
     });
 
-    if (contadorComida===0){
-        console.log("Tengo Hambre");
+        if (contadorComida===0){
+            console.log("Tengo Hambre");
     }
 }
 
-// siempreHambriento ([4, 1, 5, 7, 2]);
-siempreHambriento([3.14, "comida", "pastel", true, "comida"]);
+// // siempreHambriento ([4, 1, 5, 7, 2]);
+// siempreHambriento([3.14, "comida", "pastel", true, "comida"]);
 
 function highPass(arr, cutoff) {
     var filteredArr = [];
@@ -83,18 +83,17 @@ function reverse(arr) {
 // console.log(result); // esperamos de vuelta ["e", "d", "c", "b", "a"]
 
 
-function fibonacciArray(n) {
+function fibonacciArray(n){
     // [0, 1] son los valores inciales del arreglos para calcular el resto
     var fibArr = [0, 1];
     
-    while (fibArr.length < n)
-    {
+    while (fibArr.length < n){
         var actualPos = fibArr.length;
         var ultimo = fibArr[actualPos - 1];
         var penultimo = fibArr[actualPos - 2];
 
         var nuevoNumeroFibonacci = ultimo + penultimo;
-        fibArr.push(nuevoNumeroFibonacci)
+        fibArr.push(nuevoNumeroFibonacci);
 
     }
 
@@ -102,5 +101,5 @@ function fibonacciArray(n) {
 }
 
 
-// var result = fibonacciArray(10);
-// console.log(result); // esperamos de vuelta [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+var result = fibonacciArray(10);
+console.log(result); // esperamos de vuelta [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
